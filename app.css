@@ -1,0 +1,145 @@
+body {
+  display: block;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, Roboto, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+
+header {
+  display: block;
+  line-height: 75px;
+  font-size: 30px;
+  font-family: cursive;
+  background-color: white;
+  margin-left: 30px;
+}
+
+#navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background-color: #e0f7ff;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+}
+.item {
+  margin: 0 32px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.items .item {
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: rgb(8, 8, 114);
+}
+.items .item:hover {
+  color: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  background-color: white;
+  height: 300px;
+  padding: 70px 0;
+}
+
+.inner-footer {
+  max-width: 1090px;
+  margin: auto;
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+
+.footer-col {
+  padding: 0 15px;
+  margin: 0 150px;
+}
+.footer-col h4 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #0a3341;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #0a3341;
+  padding-left: 8px;
+}
+.footer-col .social-links a {
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  background-color: #e0f7ff;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  color: black;
+  transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover {
+  color: #0a3341;
+  background-color: #ffffff;
+}
+
+/*responsive*/
+@media (max-width: 480px) {
+  footer {
+    padding: 40px 0;
+    height: fit-content;
+  }
+
+  .footer-col {
+    margin: 0 60px;
+  }
+  .footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+  .footer-col h4::before {
+    width: 30px;
+  }
+
+  .footer-col .social-links a {
+    height: 40px;
+    width: 40px;
+    margin: 0 5px 5px 0;
+    line-height: 40px;
+  }
+  .item {
+    font-size: 20px;
+  }
+}

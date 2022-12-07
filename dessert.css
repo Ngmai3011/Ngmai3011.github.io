@@ -1,0 +1,147 @@
+.main {
+  max-height: fit-content;
+  width: 900px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-left: 100px;
+}
+
+.title {
+  font-size: 17px;
+  padding: 30px;
+}
+
+.title span {
+  color: grey;
+  font-size: 18px;
+}
+
+.table {
+  padding: 0 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content-table {
+  background: #f9f9f9;
+  border: 1px solid #aaa;
+  display: table;
+  font-size: 95%;
+  margin-bottom: 1em;
+  padding: 30px;
+  width: auto;
+}
+
+.table-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.content-table li,
+.content-table ul,
+.content-table ul li {
+  list-style: none;
+  padding: 5px;
+}
+
+.dessert {
+  font-size: 18px;
+  padding: 30px;
+}
+
+.dessert-img {
+  padding: 20px 0;
+}
+img {
+  width: 700px;
+  height: 800px;
+}
+
+.article {
+  width: 380px;
+  position: absolute;
+  z-index: 1;
+  top: 75%;
+  left: 65%;
+  padding: 8px 0;
+}
+.article-content {
+  overflow-x: hidden;
+}
+
+.article-content a {
+  padding: 6px 8px 16px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  display: block;
+  font-weight: 600;
+}
+
+.article-content a:hover {
+  color: #064579;
+}
+
+.article h4 {
+  padding: 15px;
+}
+
+.article .line hr {
+  height: 1px;
+  border: 0;
+  background-color: black;
+}
+
+footer {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 480px) {
+  .main {
+    width: 300px;
+    margin-left: 15px;
+  }
+
+  .title {
+    font-size: 10px;
+    padding: 20px;
+  }
+
+  .title span {
+    font-size: 12px;
+  }
+
+  .table {
+    padding: 0 15px;
+  }
+  .content-table {
+    margin-bottom: 0.5em;
+    padding: 15px;
+  }
+
+  .dessert {
+    font-size: 12px;
+    padding: 15px;
+  }
+
+  .dessert-img {
+    padding: 10px 0;
+  }
+  img {
+    width: 200px;
+    height: 250px;
+  }
+
+  .article {
+    width: 150px;
+    top: 65%;
+  }
+  .article h4 {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .article-content a {
+    padding: 3px 5px 10px 10px;
+    font-size: 8px;
+  }
+}
